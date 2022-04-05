@@ -7,8 +7,10 @@ public class Tasks {
 
     // Четные и нечетные символы разделить по разным строкам
 
+
+
     // Количество цифр в строке
-    public static void quantityOfWords(String enter) {
+    public static void quantityOfNumbers(String enter) {
         if (enter != null) {
             int count = 0;
             for (int i = 0; i < enter.length(); i++) {
@@ -32,7 +34,17 @@ public class Tasks {
     // Удаление одинаковых символов
     public static void removeDuplicateCharacters(String enter) {
         if (enter != null) {
-
+            StringBuilder sb = new StringBuilder();
+            int idx;
+            for (int i = 0; i < enter.length(); i++) {
+                char c = enter.charAt(i);
+                idx = enter.indexOf(c, i + 1);
+                if (idx == -1) {
+                    sb.append(c);
+                }
+            }
+            String result = sb.toString();
+            System.out.println(result);
         }
     }
 
@@ -43,6 +55,14 @@ public class Tasks {
     // Количество вхождений подстроки в строку
 
     // Вывести слова строки в обратном порядке
+    public static void reverseString(String input) {
+        int stringLength = input.length();
+        String result = "";
+        for (int i = 0; i < stringLength; i++) {
+            result = input.charAt(i) + result;
+        }
+        System.out.println(result);
+    }
 
     // Сортировка массива строк по алфавиту
 
@@ -50,14 +70,15 @@ public class Tasks {
 
     // Подсчет количества слов в строке
     public static void quantityOfWord(String enter) {
-        if (enter != null) {
-            int count = 0;
+        int count = 0;
+        if (enter.length() != 0) {
+            count++;
             for (int i = 0; i < enter.length(); i++) {
-                if (enter.equalsIgnoreCase(" ")) {
+                if (enter.charAt(i) == ' ') {
                     count++;
                 }
             }
-            System.out.println("words: " + count);
+            System.out.println("Количества слов в строке: " + count);
         }
     }
 
@@ -73,11 +94,13 @@ public class Tasks {
         System.out.println("Enter characters");
         String enter = scanner.nextLine();
 
-        //quantityOfNumbers(enter);
-
         //removeDuplicateCharacters(enter);
 
+        //quantityOfNumbers(enter);
+
         quantityOfWord(enter);
+
+        //reverseString(enter);
     }
 }
 
