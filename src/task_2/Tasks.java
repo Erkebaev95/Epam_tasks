@@ -1,4 +1,4 @@
-package task_1;
+package task_2;
 
 import java.util.Scanner;
 
@@ -6,7 +6,6 @@ public class Tasks {
     private static Scanner scanner = new Scanner(System.in);
 
     // Четные и нечетные символы разделить по разным строкам
-
 
 
     // Количество цифр в строке
@@ -51,17 +50,20 @@ public class Tasks {
     // Частота встречаемости символа в строке
 
     // Переворот строки
+    public static void reverseString(String input) {
+        if (input != null) {
+            input = new StringBuilder(input).reverse().toString();
+            System.out.println(input);
+        }
+    }
 
     // Количество вхождений подстроки в строку
 
     // Вывести слова строки в обратном порядке
-    public static void reverseString(String input) {
-        int stringLength = input.length();
-        String result = "";
-        for (int i = 0; i < stringLength; i++) {
-            result = input.charAt(i) + result;
+    public static void reverseWord(String input) {
+        if (input != null) {
+
         }
-        System.out.println(result);
     }
 
     // Сортировка массива строк по алфавиту
@@ -98,9 +100,11 @@ public class Tasks {
 
         //quantityOfNumbers(enter);
 
-        quantityOfWord(enter);
+        //quantityOfWord(enter);
 
         //reverseString(enter);
+
+        reverseWord(enter);
     }
 }
 
