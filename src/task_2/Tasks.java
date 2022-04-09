@@ -6,6 +6,21 @@ public class Tasks {
     private static Scanner scanner = new Scanner(System.in);
 
     // Четные и нечетные символы разделить по разным строкам
+    // https://stackoverflow.com/questions/48929164/split-a-string-in-java-according-to-characters-with-even-or-odd-order
+    public static void symbols(String input) {
+        if (input != null) {
+            for (int i = 0; i < input.length(); i++) {
+                int number = input.charAt(i);
+
+                if (number % 2 == 0) {
+                    System.out.println("Четные символы - " + number);
+                }
+                else {
+                    System.out.println("Нечетные символы - " + number);
+                }
+            }
+        }
+    }
 
 
     // Количество цифр в строке
@@ -62,7 +77,11 @@ public class Tasks {
     // Вывести слова строки в обратном порядке
     public static void reverseWord(String input) {
         if (input != null) {
+            String s = null;
+            for (int i = 0; i < input.length(); i++) {
 
+            }
+            System.out.print(s);
         }
     }
 
@@ -96,6 +115,8 @@ public class Tasks {
         System.out.println("Enter characters");
         String enter = scanner.nextLine();
 
+        symbols(enter);
+
         //removeDuplicateCharacters(enter);
 
         //quantityOfNumbers(enter);
@@ -104,7 +125,7 @@ public class Tasks {
 
         //reverseString(enter);
 
-        reverseWord(enter);
+        //reverseWord(enter);
     }
 }
 

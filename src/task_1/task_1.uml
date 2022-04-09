@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>task_1</OriginalElement>
+  <nodes>
+    <node x="678.9999999999999" y="20.0">task_1.Eshop</node>
+    <node x="348.1923076923076" y="202.0">task_1.Staffs</node>
+    <node x="914.1923076923076" y="191.0">task_1.Customers</node>
+    <node x="509.99999999999994" y="395.0">task_1.Seller</node>
+    <node x="105.0" y="550.0">task_1.Main</node>
+    <node x="641.1923076923076" y="213.0">task_1.Products</node>
+    <node x="105.0" y="384.0">task_1.Manager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="task_1.Staffs" target="task_1.Eshop" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="484.6923076923076" y="166.0" />
+      <point x="769.4999999999999" y="166.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="task_1.Seller" target="task_1.Staffs" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="675.5" y="359.0" />
+      <point x="484.6923076923076" y="359.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="task_1.Manager" target="task_1.Staffs" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="297.5" y="359.0" />
+      <point x="484.6923076923076" y="359.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="task_1.Customers" target="task_1.Eshop" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="1074.1923076923076" y="166.0" />
+      <point x="769.4999999999999" y="166.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="task_1.Products" target="task_1.Eshop" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="767.6923076923076" y="166.0" />
+      <point x="769.4999999999999" y="166.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="672.0" y="330.5" />
+  <SelectedNodes>
+    <node>task_1.Eshop</node>
+    <node>task_1.Staffs</node>
+    <node>task_1.Customers</node>
+    <node>task_1.Seller</node>
+    <node>task_1.Main</node>
+    <node>task_1.Products</node>
+    <node>task_1.Manager</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
